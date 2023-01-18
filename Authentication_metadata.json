@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.6.7+commit.b8d736ae"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "ret",
+						"type": "int256"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "account_id",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "public_key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "user_info",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "sig_data",
+						"type": "string"
+					}
+				],
+				"name": "RegisterEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "openTable",
+				"outputs": [
+					{
+						"internalType": "contract Table",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "account_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "public_key",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "user_info",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "sig_data",
+						"type": "string"
+					}
+				],
+				"name": "register",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "account_id",
+						"type": "string"
+					}
+				],
+				"name": "select",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Authentication.sol": "Authentication"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Authentication.sol": {
+			"keccak256": "0xf30d3d18479e15190f7cc69bf2e34c09ebf31f0f058ffe28fe4ef24dcb5d8bb7",
+			"urls": [
+				"bzz-raw://c807ad3f9f70548fbd08ad6ecfbd5b298a6b3d899f38c33a9cfaaf7eee67f08f",
+				"dweb:/ipfs/QmS943F3xBtW8i4BubwJuGBdNpESwL2eAY2marWYee7mnb"
+			]
+		},
+		"contracts/Table.sol": {
+			"keccak256": "0x26c7b190b7f8d2e9dc65cbce4972ff9e7d57aa7ce77c35dcc292332c01870cbd",
+			"urls": [
+				"bzz-raw://d863abd5cee36c28d9a0c3dce8322f77f28ee7196f9d37698eeac8d6295bf3bb",
+				"dweb:/ipfs/Qmd3UTepLRfXkz2nk1VSnMHGHG4Ej31ZT8z6jtRNjN9KaP"
+			]
+		}
+	},
+	"version": 1
+}
