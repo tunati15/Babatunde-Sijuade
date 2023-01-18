@@ -1,4 +1,4 @@
-# INTEGRATINGN BLOCKCHAIN TECHNOLOGY WITHIN IOT (SMART GRID) FOR SECURE AUTHENTICATION AND AUTHORIZATION
+# INTEGRATING BLOCKCHAIN TECHNOLOGY WITHIN IOT (SMART GRID) FOR SECURE AUTHENTICATION AND AUTHORIZATION
 
 This repository contains the source codes  for testing the functionality of the blockchain protocol deployed for securing user access in IoT systems. For the purpose of this project, we have limited the scope  to only smart grid systems.
 
