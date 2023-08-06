@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 pipeline {
     agent any
     environment {
@@ -6,11 +7,12 @@ pipeline {
      stages {
          stage("Build Image") {
             steps {
-                sh 'docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) public.ecr.aws/m3b4f0n4'
-                sh 'docker build -t domo-project .'
-                sh 'docker tag domo-project:latest public.ecr.aws/m3b4f0n4/domo-project:latest:""$BUILD_ID""'
-                sh 'docker push public.ecr.aws/m3b4f0n4/domo-project:latest:""$BUILD_ID""'
+                sh 'docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) 893971510987.dkr.ecr.us-east-1.amazonaws.com'
+                sh 'docker build -t planning-poker .'
+                sh 'docker tag  planning-poker:latest 893971510987.dkr.ecr.us-east-1.amazonaws.com/planning-poker:""$BUILD_ID""'
+                sh 'docker push 893971510987.dkr.ecr.us-east-1.amazonaws.com/planning-poker:""$BUILD_ID""'
+                    }
+                }
            } 
          }
-     }
-} 
+     
