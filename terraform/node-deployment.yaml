@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: node
-        image: 979348713075.dkr.ecr.us-east-1.amazonaws.com/domo-project-1:6
+        image: 893971510987.dkr.ecr.us-east-1.amazonaws.com/domo-project-1:7
         ports:
         - containerPort: 80

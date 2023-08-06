@@ -18,7 +18,7 @@ pipeline {
                 script {
                     dir('terraform') {
                         sh "terraform init"
-                        sh "terraform destroy --auto-approve"
+                        sh "terraform apply --auto-approve"
                     }
                 }
             }
@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     dir('terraform') {
-                        sh "aws eks update-kubeconfig --name planning-poker-eks-cluster"
+                        sh "aws eks update-kubeconfig --name domo-project -eks-cluster"
                         sh "kubectl apply -f node-deployment.yaml"
                         sh "kubectl apply -f node-service.yaml"
                     }
