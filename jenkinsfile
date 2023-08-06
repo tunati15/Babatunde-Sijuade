@@ -10,4 +10,7 @@ pipeline {
                 sh 'docker build -t domo-project .'
                 sh 'docker tag domo-project:latest public.ecr.aws/m3b4f0n4/domo-project:latest:""$BUILD_ID""'
                 sh 'docker push public.ecr.aws/m3b4f0n4/domo-project:latest:""$BUILD_ID""'
-                    }
+           } 
+         }
+     }
+} 
