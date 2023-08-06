@@ -13,6 +13,30 @@ pipeline {
                 sh 'docker push 893971510987.dkr.ecr.us-east-1.amazonaws.com/domo-project-1:""$BUILD_ID""'
                     }
                 }
-           } 
-         }
+        stage("Create an EKS Cluster") {
+            steps {
+                script {
+                    dir('terraform') {
+                        sh "terraform init"
+                        sh "terraform destroy --auto-approve"
+                    }
+                }
+            }
+        }
+        
+       stage("Deploy to EKS") {
+            steps {
+                script {
+                    dir('terraform') {
+                        sh "aws eks update-kubeconfig --name planning-poker-eks-cluster"
+                        sh "kubectl apply -f node-deployment.yaml"
+                        sh "kubectl apply -f node-service.yaml"
+                    }
+                }
+            }
+        }
+     }
+}
+         
      
+
