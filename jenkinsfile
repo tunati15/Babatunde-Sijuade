@@ -8,9 +8,9 @@ pipeline {
          stage("Build Image") {
             steps {
                 sh 'docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) 893971510987.dkr.ecr.us-east-1.amazonaws.com'
-                sh 'docker build -t planning-poker .'
-                sh 'docker tag  planning-poker:latest 893971510987.dkr.ecr.us-east-1.amazonaws.com/planning-poker:""$BUILD_ID""'
-                sh 'docker push 893971510987.dkr.ecr.us-east-1.amazonaws.com/planning-poker:""$BUILD_ID""'
+                sh 'docker build -t domo-project-1 .'
+                sh 'docker tag  domo-project-1:latest 893971510987.dkr.ecr.us-east-1.amazonaws.com/domo-project-1:""$BUILD_ID""'
+                sh 'docker push 893971510987.dkr.ecr.us-east-1.amazonaws.com/domo-project-1:""$BUILD_ID""'
                     }
                 }
            } 
