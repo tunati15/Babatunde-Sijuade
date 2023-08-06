@@ -85,7 +85,7 @@ mongoose.
 connect('mongodb+srv://admin:12345678Admin@devtaminapi.zpncstm.mongodb.net/Node-API?retryWrites=true&w=majority')
 .then(() => {
     console.log('connected to MongoDB')
-    app.listen(3000, ()=> {
+    app.listen(80, ()=> {
         console.log(`Node API app is running on port 3000`)
     });
 }).catch((error) => {
