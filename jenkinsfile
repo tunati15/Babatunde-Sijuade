@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     dir('terraform') {
-                        sh "aws eks update-kubeconfig --name domo-project-eks-cluster"
+                        sh "aws eks update-kubeconfig --name domo-project-1-eks-cluster"
                         sh "kubectl apply -f node-deployment.yaml"
                         sh "kubectl apply -f node-service.yaml"
                     }
