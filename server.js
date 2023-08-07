@@ -86,7 +86,7 @@ connect('mongodb+srv://admin:12345678Admin@devtaminapi.zpncstm.mongodb.net/Node-
 .then(() => {
     console.log('connected to MongoDB')
     app.listen(80, ()=> {
-        console.log(`Node API app is running on port 3000`)
+        console.log(`Node API app is running on port 80`)
     });
 }).catch((error) => {
     console.log(error)
