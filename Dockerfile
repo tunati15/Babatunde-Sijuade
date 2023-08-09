@@ -9,9 +9,7 @@ WORKDIR /app
 #  Copying the package.json and package-lock.json to the container
 COPY package*.json ./
 
-
-# IInstalls npm on the image
-
+# Installs npm on the image
 RUN npm install
 
 # Bundle app source
