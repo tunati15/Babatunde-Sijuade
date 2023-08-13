@@ -4,7 +4,7 @@ module "eks" {
     cluster_name = "domo-project-1-eks-cluster"
     cluster_version = "1.26"
 
-    cluster_endpoint_public_access  = true 
+    cluster_endpoint_public_access  = true
 
     vpc_id = module.domo-project-1-vpc.vpc_id
     subnet_ids = module.domo-project-1-vpc.private_subnets

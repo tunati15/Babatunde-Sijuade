@@ -18,7 +18,7 @@ pipeline {
                 script {
                     dir('terraform') {
                         sh "terraform init"
-                        sh "terraform apply --auto-approve"
+                        sh "terraform destroy --auto-approve"
                     }
                 }
             }
@@ -35,8 +35,17 @@ pipeline {
                 }
             }
         }
-     }
+ 
+        stage('Upload to S3') {
+            steps {
+                script {
+                    withAWS(region:'us-east-1', credentials:'Domo-Project') {
+                        s3Upload(file:'Domo-Project.zip', bucket:'domo-bucket-project1', path:'artifacts/my-artifact.zip')
+ 
+                    }
+                }
+            }
+        }
+      }
 }
-         
-     
 

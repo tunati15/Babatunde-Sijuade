@@ -6,7 +6,8 @@ const express = require("express");
 const PORT = 80;
 const HOST = "0.0.0.0";
 
-// App
+// App 
+// Declare route
 const app = express();
 app.get("/", (req, res) => {
   res.send("Hello World");
