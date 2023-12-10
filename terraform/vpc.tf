@@ -21,6 +21,7 @@ module "domo-project-1-vpc" {
     "kubernetes.io/role/elb"                  = 1
   }
 
+
   private_subnet_tags = {
     "kubernetes.io/cluster/domo-project-1-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb"         = 1
