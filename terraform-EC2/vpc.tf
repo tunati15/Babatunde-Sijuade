@@ -4,7 +4,6 @@ resource "aws_vpc" "planning-poker-vpc" {
     Name = "${var.env_prefix}-vpc"
   }
 }
-
 resource "aws_subnet" "planning-poker" {
   vpc_id            = aws_vpc.planning-poker-vpc.id
   cidr_block        = var.subnet_cidr_block
