@@ -29,8 +29,7 @@ establishing a robust infrastructure for this API, I will be implementing a CI/C
 To achieve this, I will be incorporating Jenkins, a powerful automation tool, to orchestrate 
 and streamline the entire CI/CD process.
  
- 
-2:  Jenkins will be responsible for automating various stages of development, including 
+3:  Jenkins will be responsible for automating various stages of development, including 
 continuous integration, where code changes are systematically integrated into the 
 repository, and continuous deployment, which involves the automated release of the
 changes to the production environment. 
