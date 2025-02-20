@@ -10,7 +10,6 @@ data "aws_ami" "latest-amazon-linux-image" {
     values = ["hvm"]
   }
 }
-
 resource "aws_instance" "Test-server" {
   ami                         = data.aws_ami.latest-amazon-linux-image.id
   instance_type               = var.instance_type
