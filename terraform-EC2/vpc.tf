@@ -2,6 +2,7 @@ resource "aws_vpc" "planning-poker-vpc" {
   cidr_block = var.vpc_cidr_block
   tags = {
     Name = "${var.env_prefix}-vpc"
+
   }
 }
 resource "aws_subnet" "planning-poker" {
