@@ -6,7 +6,7 @@ FROM node:14-alpine
 WORKDIR /app
 
 # Install app dependencies
-#  Copying the package.json from host machine to the container
+#  Copying the  package.json from host machine to the container
 COPY package*.json ./
 
 # Installs node.js dependencies on the container.
