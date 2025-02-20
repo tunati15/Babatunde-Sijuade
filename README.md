@@ -1,5 +1,5 @@
 
-                      DEPLOYMENT OF SIMPLE "Hello World" API INFRASTRUCTURE on AWS EKS 
+                      Deploying A SIMPLE "Hello World" API on AWS EKS 
 
 1: INTRODUCTION
 
