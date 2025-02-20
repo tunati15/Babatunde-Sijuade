@@ -1,8 +1,8 @@
 data "aws_availability_zones" "azs" {}
-module "domo-project-1-vpc" {
+module "demo-project-1-vpc" {
   source          = "terraform-aws-modules/vpc/aws"
   version         = "5.0.0"
-  name            = "domo-project-1-vpc"
+  name            = "demo-project-1-vpc"
   cidr            = var.vpc_cidr_block
   private_subnets = var.private_subnet_cidr_blocks
   public_subnets  = var.public_subnet_cidr_blocks
