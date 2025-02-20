@@ -14,7 +14,6 @@ resource "aws_s3_bucket" "s3_backend_store" {
 }
 
 
-
 #Create Dynamodb
 
 resource "aws_dynamodb_table" "statelock15"{
